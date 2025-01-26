@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import { exit } from "process";
-
 export async function dbConnect() {
     try {
         await mongoose.connect(process.env.MONGODB_URI!);
