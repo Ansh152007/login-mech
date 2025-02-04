@@ -6,7 +6,7 @@ export const getData = (request: NextRequest) => {
         const token = request.cookies.get("token")?.value || ""
         const tkv:any = jwt.verify(token,process.env.JWT_SECRET!)
         return tkv._id
-    } catch (error) {
-        
+    } catch (error:any) {
+        throw new Error(error.message)
     }
 }
