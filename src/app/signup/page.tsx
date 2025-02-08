@@ -32,7 +32,7 @@ const page = () => {
   };
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="flex flex-col font-bold text-2xl text-center">
+      <div className="flex flex-col font-bold text-2xl text-center just">
         <h1>{loader ? "Siging Up..." : "Sign Up"}</h1>
         <div className="my-4">
           <input

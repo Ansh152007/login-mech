@@ -13,7 +13,8 @@ const userSchema = new mongoose.Schema({
     forgetPasswordToken: String,
     forgetPasswordTokenExpiry: Date,
     verifyToken: String,
-    verifyTokenExpiry: Date
+    verifyTokenExpiry: Date,
+    isVerified:Boolean,
 
 })
 const User = mongoose.models.users || mongoose.model("User",userSchema)
